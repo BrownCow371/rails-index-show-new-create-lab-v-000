@@ -3,7 +3,6 @@
 
   <%@coupons.each do |coupon|%>
     <ul>
-        <li><%=link_to coupon.coupon_code, coupon_path(coupon)%></li>
-        <li><%=coupon.store%></li>
+        <li><%=link_to coupon.coupon_code, coupon_path(coupon)%> at <%=coupon.store%> </li>
     </ul>
   <%end%>
